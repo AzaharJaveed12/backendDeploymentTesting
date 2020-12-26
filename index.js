@@ -9,6 +9,11 @@ app.get("/",(req,res) => {
     res.send("HELLO JAVEED BHAI");
 });
 
+app.get("/name",(req,res) => {
+    console.log("get request acalled");
+    res.send("WORKING BHAOI");
+});
+
 app.listen(port,() => {
     console.log("listining to port ", port);
 });
